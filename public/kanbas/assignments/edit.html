@@ -3,155 +3,433 @@
   <head>
     <meta charset="UTF-8" />
     <title>Edit Assignment</title>
+    <link
+      href="../../vendors/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/66c603d5ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="../index.css" rel="stylesheet" />
   </head>
   <body>
-    <table border="0" width="100%">
-      <thead></thead>
-      <tbody>
-        <tr valign="baseline">
-          <td>
-            <ul>
-              <li><a href="../account.html">Account</a></li>
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="../courses.html">Courses</a></li>
-              <li><a href="#">Calendar</a></li>
-              <li><a href="#">Inbox</a></li>
-              <li><a href="#">History</a></li>
-              <li><a href="#">Studio</a></li>
-              <li><a href="#">Commons</a></li>
-              <li><a href="#">Help</a></li>
-            </ul>
-          </td>
-          <td>
-            <ul>
-              <li><a href="../home.html">Home</a></li>
-              <li><a href="#">Modules</a></li>
-              <li><a href="#">Piazza</a></li>
-              <li><a href="#">Zoom Meetings</a></li>
-              <li><a href="index.html">Assignments</a></li>
-              <li><a href="#">Quizzes</a></li>
-              <li><a href="../grades.html">Grades</a></li>
-              <li><a href="#">People</a></li>
-              <li><a href="#">Panopto Video</a></li>
-              <li><a href="#">Discussions</a></li>
-              <li><a href="#">Announcements</a></li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Files</a></li>
-              <li><a href="#">Rubrics</a></li>
-              <li><a href="#">Outcomes</a></li>
-              <li><a href="#">Collaborations</a></li>
-              <li><a href="#">Syllabus</a></li>
-              <li><a href="../settings.html">Settings</a></li>
-            </ul>
-          </td>
-          <td>
-            <h3>Assignment Name</h3>
-            <input type="text" value="Assignment Name" />
-            <br />
-            <br />
-            <textarea cols="25" rows="2">
-This is the assignment description.
-                </textarea
+    <div class="row">
+      <div class="bg-black" id="nav-1">
+        <ul class="list-group">
+          <li class="list-group-item border-0 bg-black">
+            <a href="../index.html">
+              <img src="../../images/logo.png" />
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="../profile/index.html">
+              <i class="fa fa-user" style="color: gray"></i>
+              Account
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="../dashboard.html">
+              <i class="fa fa-gauge-high" style="color: red"></i>
+              Dashboard
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black" id="active-1">
+            <a href="../courses.html">
+              <i class="fa fa-book" style="color: red"></i>
+              Courses
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="#">
+              <i class="fa fa-calendar" style="color: red"></i>
+              Calendar
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="#">
+              <i class="fa fa-inbox" style="color: red"></i>
+              Inbox
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="#">
+              <i class="fa fa-clock" style="color: red"></i>
+              History
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="#">
+              <i class="fa fa-video" style="color: red"></i>
+              Studio
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="#">
+              <i class="fa fa-share-from-square" style="color: red"></i>
+              Commons
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="#">
+              <i class="fa fa-circle-question" style="color: red"></i>
+              Help
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col" id="nav-2">
+        <div class="row">
+          <div style="display: flex; justify-content: space-between">
+            <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <i
+                  class="fa fa-bars"
+                  style="color: red; margin-right: 20px"
+                ></i>
+                <li class="breadcrumb-item" aria-current="page">
+                  CS4550.12631.202410
+                </li>
+                <li class="breadcrumb-item" aria-current="page">Assignments</li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  A1 - ENV + ...
+                </li>
+              </ol>
+            </nav>
+            <button class="btn btn-light float-end mb-3">
+              Student View
+            </button>
+          </div>
+          <hr />
+          <div class="col-2">
+            <label
+              for="course-info"
+              style="color: gray; font-size: 12px"
+              class="text-truncate"
             >
-            <br />
-            <br />
-            <label for="points">Points</label>
-            <br />
-            <input type="text" value="100" name="points" />
-            <br />
-            <br />
-            <label for="assignment-group">Assignment Group</label>
-            <br />
-            <select>
-              <option value="GROUP">ASSIGNMENTS</option>
-            </select>
-            <br />
-            <br />
-            <label for="display-grade">Display Grade as</label>
-            <br />
-            <select>
-              <option value="PERCENTAGE">Percentage</option>
-            </select>
-            <br />
-            <br />
-            <label for="submission-type">Submission Type</label>
-            <br />
-            <select>
-              <option value="ONLINE">Online</option>
-            </select>
-            <br />
-            <br />
-            <label for="entry-options">Online Entry Options</label>
-            <br />
-            <input type="checkbox" value="TEXT" name="checkbox-text" />
-            <label for="text-entry">Text Entry</label>
-            <br />
-            <input type="checkbox" value="URL" name="checkbox-url" />
-            <label for="website-url">Website URL</label>
-            <br />
-            <input type="checkbox" value="MEDIA" name="checkbox-media" />
-            <label for="media-recordings">Media Recordings</label>
-            <br />
-            <input type="checkbox" value="ANNOTATION" name="checkbox-anno" />
-            <label for="student-anno">Student Annotation</label>
-            <br />
-            <input type="checkbox" value="FILE" name="checkbox-file" />
-            <label for="file-uploads">File Uploads</label>
-            <br />
-            <br />
-            <label for="submission-attempts">Submission Attempts</label>
-            <br />
-            <select>
-              <option value="UNLIMITED">Unlimited</option>
-            </select>
-            <br />
-            <br />
-            <label for="plagiarism">Plagiarism Review</label>
-            <br />
-            <select>
-              <option value="NONE">None</option>
-            </select>
-            <br />
-            <br />
-            <label for="group-assignment">Group Assignment</label>
-            <br />
-            <input type="checkbox" value="GROUP" name="checkbox-group" />
-            <label for="group-assignment">This is a group assignment</label>
-            <br />
-            <br />
-            <label for="peer-reviews">Peer Reviews</label>
-            <br />
-            <input type="checkbox" value="PEER" name="peer-reviews" />
-            <label for="peer-reviews">Require Peer Reviews</label>
-            <br />
-            <br />
-            <label for="assign">Assign</label>
-            <br />
-            <label for="assign-to">Assign to</label>
-            <br />
-            <input type="text" value="Everyone" name="assign-to" />
-            <br />
-            <br />
-            <label for="due">Due</label>
-            <br />
-            <input type="date" name="due" />
-            <br />
-            <br />
-            <label for="available">Available from</label>
-            <br />
-            <input type="date" name="available-from" />
-            <br />
-            <br />
-            <label for="until">Until</label>
-            <br />
-            <input type="date" name="until" />
-            <br />
-            <br />
-            <button onclick="window.location.href='index.html';">Cancel</button>
-            <button onclick="window.location.href='index.html';">Save</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+              <i>202410_1 Fall 2023 Semester</i>
+            </label>
+            <ul class="list-group">
+              <li class="list-group-item border-0">
+                <a href="../courses.html">Home</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Modules</a>
+              </li>
+              <li class="list-group-item border-0"><a href="#">Piazza</a></li>
+              <li class="list-group-item border-0">
+                <a href="#">Zoom Meetings</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Quizzes</a>
+              </li>
+              <li class="list-group-item border-0" id="active-2">
+                <a href="index.html">Assignments</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="../grades.html">Grades</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">People</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Panopto Video</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Discussions</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Announcements</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Pages</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Files</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Rubrics</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Outcomes</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Collaborations</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Syllabus</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Progress Reports (EAB Navigate)</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Settings</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-7 mb-4">
+            <form>
+              <div class="mb-3">
+                <label for="assignment-name" class="form-label"
+                  >Assignment Name</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  value="A1 - ENV + HTML"
+                  id="assignment-name"
+                />
+              </div>
+              <textarea class="form-control mb-3" style="height: 135px">
+This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a GitHub source repository, and then deploying the content to a remote server hosted on Netlify.
+</textarea
+              >
+              <div class="row">
+                <div class="col">
+                  <label for="points" class="form-label float-end">
+                    Points
+                  </label>
+                  <br />
+                  <br />
+                  <label for="assignment-group" class="form-label float-end">
+                    Assignment Group
+                  </label>
+                  <br />
+                  <br />
+                  <label for="display-grade-as" class="form-label float-end">
+                    Display Grade as
+                  </label>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <label for="submission-type" class="form-label float-end">
+                    Submission Type
+                  </label>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <label for="assign" class="form-label float-end"
+                    >Assign</label
+                  >
+                </div>
+                <div class="col-7">
+                  <input
+                    type="text"
+                    class="form-control mb-3"
+                    id="points"
+                    value="100"
+                  />
+                  <select class="form-select mb-3" id="assignment-group">
+                    <option value="ASSIGNMENTS">ASSIGNMENTS</option>
+                  </select>
+                  <select class="form-select mb-3" id="display-grade-as">
+                    <option value="PERCCENTAGE">Percentage</option>
+                  </select>
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="count-final-grade"
+                  />
+                  <label
+                    class="form-check-label mb-3"
+                    for="count-final-grade"
+                    style="font-size: 14px"
+                  >
+                    Do not count this assignment towards the final grade
+                  </label>
+                  <div class="border rounded mb-3" id="submission-type">
+                    <select
+                      class="form-select m-3 w-30"
+                      id="display-grade-as"
+                      style="width: 60%"
+                    >
+                      <option value="ONLINE" class="w-30">Online</option>
+                    </select>
+                    <p class="m-3 fw-500">
+                      Online Entry Options
+                    </p>
+                    <div class="m-3">
+                      <input
+                        class="form-check-input me-2"
+                        type="checkbox"
+                        value=""
+                        id="count-final-grade"
+                        checked
+                      />
+                      <label
+                        class="form-check-label fw-500"
+                        for="count-final-grade"
+                        style="font-size: 14px"
+                      >
+                        Text Entry
+                      </label>
+                    </div>
+                    <div class="m-3">
+                      <input
+                        class="form-check-input me-2"
+                        type="checkbox"
+                        value=""
+                        id="web-url"
+                        checked
+                      />
+                      <label
+                        class="form-check-label fw-500"
+                        for="web-url"
+                        style="font-size: 14px"
+                      >
+                        Website URL
+                      </label>
+                    </div>
+                    <div class="m-3">
+                      <input
+                        class="form-check-input me-2"
+                        type="checkbox"
+                        value=""
+                        id="media"
+                        checked
+                      />
+                      <label
+                        class="form-check-label fw-500"
+                        for="media"
+                        style="font-size: 14px"
+                      >
+                        Media Recordings
+                      </label>
+                    </div>
+                    <div class="m-3">
+                      <input
+                        class="form-check-input me-2"
+                        type="checkbox"
+                        value=""
+                        id="student-anno"
+                      />
+                      <label
+                        class="form-check-label fw-500"
+                        for="student-anno"
+                        style="font-size: 14px"
+                      >
+                        Student Annotation
+                      </label>
+                    </div>
+                    <div class="m-3">
+                      <input
+                        class="form-check-input me-2"
+                        type="checkbox"
+                        value=""
+                        id="file-upload"
+                      />
+                      <label
+                        class="form-check-label fw-500"
+                        for="file-upload"
+                        style="font-size: 14px"
+                      >
+                        File Uploads
+                      </label>
+                    </div>
+                  </div>
+                  <div class="input-group border rounded mb-3" id="assign">
+                    <label
+                      for="assign-to"
+                      class="form-label m-3 mb-2 fw-500"
+                    >
+                      Assign to
+                    </label>
+                    <input
+                      type="text"
+                      class="form-control mx-3 mb-2 border rounded"
+                      style="width: 90%"
+                      id="assign-to"
+                      value="Everyone"
+                    />
+                    <label
+                      for="due-date"
+                      class="form-label m-3 mb-2 fw-500"
+                    >
+                      Due
+                    </label>
+                    <input
+                      type="datetime-local"
+                      class="form-control mx-3 mb-2 border rounded"
+                      style="width: 90%"
+                      id="due-date"
+                      value="2023-09-18T23:59"
+                    />
+                    <div class="row mb-4">
+                      <div class="col-5">
+                        <label
+                          for="available"
+                          class="form-label ms-3 mb-1 fw-500"
+                        >
+                          Available from
+                        </label>
+                        <input
+                          type="datetime-local"
+                          class="form-control mx-3 mb-2 border rounded"
+                          id="available"
+                          value="2023-09-06T12:00"
+                        />
+                      </div>
+                      <div class="col-5">
+                        <label
+                          for="until"
+                          class="form-label ms-3 mb-1 fw-500"
+                        >
+                          Until
+                        </label>
+                        <input
+                          type="datetime-local"
+                          class="form-control mx-3 mb-2 border rounded"
+                          id="until"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      class="btn btn-light"
+                      type="button"
+                      style="width: 100%"
+                    >
+                      <i class="fa fa-plus"></i>
+                      Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <hr />
+          <div>
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="NO"
+              id="notify-users"
+            />
+            <label
+              class="form-check-label mb-3"
+              for="notify-users"
+              style="font-size: 14px"
+            >
+              Notify users that this content has changed
+            </label>
+            <button class="btn btn-danger float-end ms-1">Save</button>
+            <button class="btn btn-light float-end">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

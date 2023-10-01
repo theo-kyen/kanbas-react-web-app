@@ -2,50 +2,460 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title></title>
+    <title>Kanbas</title>
+    <link href="../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/66c603d5ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="index.css" rel="stylesheet" />
   </head>
   <body>
-    <table border="0">
-      <thead></thead>
-      <tbody>
-        <tr valign="baseline" width="100%">
-          <td>
-            <ul>
-              <li><a href="account.html">Account</a></li>
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="courses.html">Courses</a></li>
-              <li><a href="#">Calendar</a></li>
-              <li><a href="#">Inbox</a></li>
-              <li><a href="#">History</a></li>
-              <li><a href="#">Studio</a></li>
-              <li><a href="#">Commons</a></li>
-              <li><a href="#">Help</a></li>
+    <div class="row">
+      <div class="bg-black" id="nav-1">
+        <ul class="list-group">
+          <li class="list-group-item border-0 bg-black">
+            <a href="index.html">
+              <img src="../images/logo.png" />
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="profile/index.html">
+              <i class="fa fa-user" style="color: gray"></i>
+              Account
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="dashboard.html">
+              <i class="fa fa-gauge-high" style="color: red"></i>
+              Dashboard
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black" id="active-1">
+            <a href="courses.html">
+              <i class="fa fa-book" style="color: red"></i>
+              Courses
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="#">
+              <i class="fa fa-calendar" style="color: red"></i>
+              Calendar
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="#">
+              <i class="fa fa-inbox" style="color: red"></i>
+              Inbox
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="#">
+              <i class="fa fa-clock" style="color: red"></i>
+              History
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="#">
+              <i class="fa fa-video" style="color: red"></i>
+              Studio
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="#">
+              <i class="fa fa-share-from-square" style="color: red"></i>
+              Commons
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="#">
+              <i class="fa fa-circle-question" style="color: red"></i>
+              Help
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col" id="nav-2">
+        <div class="row">
+          <div style="display: flex; justify-content: space-between">
+            <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <i
+                  class="fa fa-bars"
+                  style="color: red; margin-right: 20px"
+                ></i>
+                <li class="breadcrumb-item" aria-current="page">
+                  CS4550.12631.202410
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Home</li>
+              </ol>
+            </nav>
+            <button class="btn btn-secondary float-end mb-3">
+              Student View
+            </button>
+          </div>
+          <hr />
+          <div class="col-2">
+            <label
+              for="course-info"
+              style="color: gray; font-size: 12px"
+              class="text-truncate"
+            >
+              <i>202410_1 Fall 2023 Semester</i>
+            </label>
+            <ul class="list-group">
+              <li class="list-group-item border-0" id="active-2">
+                <a href="courses.html">Home</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Modules</a>
+              </li>
+              <li class="list-group-item border-0"><a href="#">Piazza</a></li>
+              <li class="list-group-item border-0">
+                <a href="#">Zoom Meetings</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="assignments/index.html">Assignments</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Quizzes</a>
+              </li>
+              <li class="list-group-item border-0"><a href="grades.html">Grades</a></li>
+              <li class="list-group-item border-0">
+                <a href="#">People</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Panopto Video</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Discussions</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Announcements</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Pages</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Files</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Rubrics</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Outcomes</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Collaborations</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Syllabus</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Progress Reports (EAB Navigate)</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Settings</a>
+              </li>
             </ul>
-          </td>
-          <td>
-            <ul>
-              <li><a href="home.html">Home</a></li>
-              <li><a href="#">Modules</a></li>
-              <li><a href="#">Piazza</a></li>
-              <li><a href="#">Zoom Meetings</a></li>
-              <li><a href="assignments/index.html">Assignments</a></li>
-              <li><a href="#">Quizzes</a></li>
-              <li><a href="grades.html">Grades</a></li>
-              <li><a href="#">People</a></li>
-              <li><a href="#">Panopto Video</a></li>
-              <li><a href="#">Discussions</a></li>
-              <li><a href="#">Announcements</a></li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Files</a></li>
-              <li><a href="#">Rubrics</a></li>
-              <li><a href="#">Outcomes</a></li>
-              <li><a href="#">Collaborations</a></li>
-              <li><a href="#">Syllabus</a></li>
-              <li><a href="settings.html">Settings</a></li>
+          </div>
+          <div class="col-7">
+            <div class="col">
+              <button class="btn btn-secondary float-end" type="button">
+                <i class="fa fa-ellipsis-vertical"></i>
+              </button>
+              <button class="btn btn-danger float-end mx-1" type="button">
+                Module
+              </button>
+              <div class="dropdown mx-1">
+                <button
+                  class="btn btn-secondary float-end dropdown-toggle"
+                  type="button"
+                >
+                  Publish All
+                </button>
+                <ul class="dropdown-menu"></ul>
+              </div>
+              <button class="btn btn-secondary float-end mx-1" type="button">
+                View Progress
+              </button>
+              <button class="btn btn-secondary float-end" type="button">
+                Collapse All
+              </button>
+            </div>
+            <br />
+            <hr />
+            <ul class="list-group">
+              <div class="mb-4">
+                <li class="list-group-item list-group-item-secondary">
+                  Week 0 - INTRO
+                  <i
+                    class="fa fa-circle-check float-end"
+                    style="color: green"
+                  ></i>
+                </li>
+                <li class="list-group-item module">
+                  LEARNING OBJECTIVES
+                  <i
+                    class="fa fa-circle-check float-end"
+                    style="color: green"
+                  ></i>
+                </li>
+                <li class="list-group-item module ps-5">
+                  Introduction to the course
+                  <i
+                    class="fa fa-circle-check float-end"
+                    style="color: green"
+                  ></i>
+                </li>
+                <li class="list-group-item module ps-5">
+                  Learn what is Web Development
+                  <i
+                    class="fa fa-circle-check float-end"
+                    style="color: green"
+                  ></i>
+                </li>
+                <li class="list-group-item module ps-5">
+                  Creating a development environment
+                  <i
+                    class="fa fa-circle-check float-end"
+                    style="color: green"
+                  ></i>
+                </li>
+                <li class="list-group-item module ps-5">
+                  Creating a Web Application
+                  <i
+                    class="fa fa-circle-check float-end"
+                    style="color: green"
+                  ></i>
+                </li>
+                <li class="list-group-item module ps-5">
+                  Getting started with the 1st assignment
+                  <i
+                    class="fa fa-circle-check float-end"
+                    style="color: green"
+                  ></i>
+                </li>
+                <li class="list-group-item module">
+                  READING
+                  <i
+                    class="fa fa-circle-check float-end"
+                    style="color: green"
+                  ></i>
+                </li>
+                <li class="list-group-item module ps-5">
+                  Full Stack Developer - Chapter 1 - Introduction
+                  <i
+                    class="fa fa-circle-check float-end"
+                    style="color: green"
+                  ></i>
+                </li>
+                <li class="list-group-item module ps-5">
+                  Full Stack Developer - Chapter 2 - Creating User Interfaces
+                  With HTML
+                  <i
+                    class="fa fa-circle-check float-end"
+                    style="color: green"
+                  ></i>
+                </li>
+                <li class="list-group-item module">
+                  SLIDES
+                  <i
+                    class="fa fa-circle-check float-end"
+                    style="color: green"
+                  ></i>
+                </li>
+                <li class="list-group-item module ps-5">
+                  <a href="#"
+                    >Introduction to Web Development
+                    <i
+                      class="fa fa-circle-check float-end"
+                      style="color: green"
+                    ></i
+                  ></a>
+                </li>
+                <li class="list-group-item module ps-5">
+                  <a href="#"
+                    >Creating an HTTP server with Node.js
+                    <i
+                      class="fa fa-circle-check float-end"
+                      style="color: green"
+                    ></i
+                  ></a>
+                </li>
+                <li class="list-group-item module ps-5">
+                  <a href="#"
+                    >Creating a React Application
+                    <i
+                      class="fa fa-circle-check float-end"
+                      style="color: green"
+                    ></i
+                  ></a>
+                </li>
+              </div>
+              <div>
+                <li class="list-group-item list-group-item-secondary">
+                  Week 1 - HTML
+                  <i
+                    class="fa fa-circle-check float-end"
+                    style="color: green"
+                  ></i>
+                </li>
+                <li class="list-group-item module">
+                  LEARNING OBJECTIVES
+                  <i
+                    class="fa fa-circle-check float-end"
+                    style="color: green"
+                  ></i>
+                </li>
+                <li class="list-group-item module ps-5">
+                  Learn how to create user interfaces with HTML
+                  <i
+                    class="fa fa-circle-check float-end"
+                    style="color: green"
+                  ></i>
+                </li>
+                <li class="list-group-item module">
+                  READING
+                  <i
+                    class="fa fa-circle-check float-end"
+                    style="color: green"
+                  ></i>
+                </li>
+                <li class="list-group-item module ps-5">
+                  Full Stack Developer - Chapter 1 - Introduction
+                  <i
+                    class="fa fa-circle-check float-end"
+                    style="color: green"
+                  ></i>
+                </li>
+                <li class="list-group-item module">
+                  SLIDES
+                  <i
+                    class="fa fa-circle-check float-end"
+                    style="color: green"
+                  ></i>
+                </li>
+                <li class="list-group-item module ps-5">
+                  <a href="#">
+                    Introduction to HTML and the DOM
+                    <i
+                      class="fa fa-circle-check float-end"
+                      style="color: green"
+                    ></i>
+                  </a>
+                </li>
+              </div>
             </ul>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+          </div>
+          <div class="col-3">
+            <label for="course-status">Course Status</label>
+            <br />
+            <button class="btn btn-secondary mb-3" type="button">
+              Unpublish
+            </button>
+            <button class="btn btn-success mb-3" disabled type="button">
+              Published
+            </button>
+            <div class="d-grid gap-1 mb-3">
+              <button
+                class="btn btn-secondary"
+                type="button"
+                style="text-align: left"
+              >
+                Import Existing Content
+              </button>
+              <button
+                class="btn btn-secondary"
+                type="button"
+                style="text-align: left"
+              >
+                Import from Commons
+              </button>
+              <button
+                class="btn btn-secondary"
+                type="button"
+                style="text-align: left"
+              >
+                Choose Home Page
+              </button>
+              <button
+                class="btn btn-secondary"
+                type="button"
+                style="text-align: left"
+              >
+                View Course Stream
+              </button>
+              <button
+                class="btn btn-secondary"
+                type="button"
+                style="text-align: left"
+              >
+                New Announcement
+              </button>
+              <button
+                class="btn btn-secondary"
+                type="button"
+                style="text-align: left"
+              >
+                New Analytics
+              </button>
+              <button
+                class="btn btn-secondary"
+                type="button"
+                style="text-align: left"
+              >
+                View Course Notifications
+              </button>
+            </div>
+            <h4 class="fs-6">To Do</h4>
+            <hr />
+            <div class="mb-3">
+              <a href="#">Grade A1 - ENV + HTML</a>
+              <br />
+              <label for="assignment-info" style="color: gray; font-size: 14px">
+                100 points - Sep 18 at 11:59pm
+              </label>
+            </div>
+            <div style="display: flex; justify-content: space-between">
+              <h4 class="fs-6">Coming Up</h4>
+              <a href="#">View Calendar</a>
+            </div>
+            <hr />
+            <div class="mb-3">
+              <a href="#">Lecture</a>
+              <br />
+              <label for="course-info" style="color: gray; font-size: 14px">
+                CS4550.12631.202410
+              </label>
+              <label for="date-info" style="color: gray; font-size: 10px">
+                Sep 11 at 11:45am
+              </label>
+            </div>
+            <div class="mb-3">
+              <a href="#">CS5610 06 SP23 Lecture</a>
+              <br />
+              <label for="course-info" style="color: gray; font-size: 14px">
+                CS4550.12631.202410
+              </label>
+              <label for="date-info" style="color: gray; font-size: 10px">
+                Sep 11 at 6pm
+              </label>
+            </div>
+            <div class="mb-3">
+              <a href="#">CS5610 Web Development Summer 1 2023 - LECTURE</a>
+              <br />
+              <label for="course-info" style="color: gray; font-size: 14px">
+                CS4550.12631.202410
+              </label>
+              <label for="date-info" style="color: gray; font-size: 10px">
+                Sep 11 at 7pm
+              </label>
+            </div>
+            <a href="#" style="font-size: 10px">12 more in the next week ...</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
