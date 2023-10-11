@@ -3,68 +3,139 @@
   <head>
     <meta charset="UTF-8" />
     <title>Profile</title>
+    <link
+      href="../../vendors/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/66c603d5ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="../index.css" rel="stylesheet" />
   </head>
   <body>
-    <table border="0" width="100%">
-      <thead></thead>
-      <tbody>
-        <tr valign="baseline">
-          <td>
-            <ul>
-              <li><a href="../account.html">Account</a></li>
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="../courses.html">Courses</a></li>
-              <li><a href="#">Calendar</a></li>
-              <li><a href="#">Inbox</a></li>
-              <li><a href="#">History</a></li>
-              <li><a href="#">Studio</a></li>
-              <li><a href="#">Commons</a></li>
-              <li><a href="#">Help</a></li>
+    <div class="row">
+      <div class="col-4 bg-black" id="nav-1">
+        <ul class="list-group bg-black">
+          <li class="list-group-item border-0 bg-black">
+            <a href="../index.html">
+              <img src="../../images/logo.png" />
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black" id="active-1">
+            <a href="index.html">
+              <i class="fa fa-user" style="color: gray"></i>
+              Account
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="../dashboard.html">
+              <i class="fa fa-gauge-high" style="color: red"></i>
+              Dashboard
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="../courses.html">
+              <i class="fa fa-book" style="color: red"></i>
+              Courses
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="#">
+              <i class="fa fa-calendar" style="color: red"></i>
+              Calendar
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="#">
+              <i class="fa fa-inbox" style="color: red"></i>
+              Inbox
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="#">
+              <i class="fa fa-clock" style="color: red"></i>
+              History
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="#">
+              <i class="fa fa-video" style="color: red"></i>
+              Studio
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="#">
+              <i class="fa fa-share-from-square" style="color: red"></i>
+              Commons
+            </a>
+          </li>
+          <li class="list-group-item border-0 bg-black">
+            <a href="#">
+              <i class="fa fa-circle-question" style="color: red"></i>
+              Help
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-9" id="nav-2">
+        <i class="fa fa-bars" style="color: red; margin-right: 20px"></i>
+        <label for="user-profile">Theodore Kyenkyenhene's Profile</label>
+        <hr />
+        <div class="row">
+          <div class="col-2">
+            <ul class="list-group">
+              <li class="list-group-item border-0">
+                <a href="#">Notifications</a>
+              </li>
+              <li class="list-group-item border-0" id="active-2">
+                <a href="index.html">Profile</a>
+              </li>
+              <li class="list-group-item border-0"><a href="#">Files</a></li>
+              <li class="list-group-item border-0"><a href="#">Settings</a></li>
+              <li class="list-group-item border-0">
+                <a href="#">ePortfolios</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Shared Content</a>
+              </li>
+              <li class="list-group-item border-0"><a href="#">The Hub</a></li>
+              <li class="list-group-item border-0">
+                <a href="#">Qwickly Course Tools</a>
+              </li>
+              <li class="list-group-item border-0">
+                <a href="#">Global Announcements</a>
+              </li>
             </ul>
-          </td>
-          <td>
-            <ul>
-              <li><a href="#">Notifications</a></li>
-              <li><a href="index.html">Profile</a></li>
-              <li><a href="#">Files</a></li>
-              <li><a href="#">Settings</a></li>
-              <li><a href="#">ePortfolios</a></li>
-              <li><a href="#">Shared Content</a></li>
-              <li><a href="#">The Hub</a></li>
-              <li><a href="#">Qwickly Course Tools</a></li>
-              <li><a href="#">Global Announcements</a></li>
-            </ul>
-          </td>
-          <td>
-            <p>Theodore Kyenkyenhene's Profile</p>
-            <hr />
-            <table width="100%">
-              <thead></thead>
-              <tbody>
-                <tr valign="baseline">
-                  <td>
-                    <h2>Theodore Kyenkyenhene</h2>
-                    <h3>Contact</h3>
-                    <p>
-                      No registered services, but you can add some on the
-                      <a href="#">settings</a> page.
-                    </p>
-                    <h3>Biography</h3>
-                    <p>This is my biography</p>
-                    <h3>Links</h3>
-                    <p><a href="#">YouTube</a></p>
-                  </td>
-                  <td>
-                    <button onclick="window.location.href='edit.html';">
-                      Edit Profile
-                    </button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+          </div>
+          <div class="col-5">
+            <i class="fa fa-user fa-light fa-8x"></i>
+            <br />
+            <br />
+            <h3>Theodore Kyenkyenhene</h3>
+            <br />
+            <br />
+            <h4>Contact</h4>
+            <p>
+              No registered services, you can add some on the
+              <a href="#">settings</a> page.
+            </p>
+            <br />
+            <br />
+            <h4>Biography</h4>
+            <p>This is my biography</p>
+            <br />
+            <h4>Links</h4>
+            <a href="https://www.youtube.com/watch?v=9XsRrm-VKj4">YouTube</a>
+          </div>
+          <div class="col">
+            <a class="btn bg-light float-end" href="edit.html">
+              <i class="fa fa-pencil"></i>
+              Edit Profile
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
