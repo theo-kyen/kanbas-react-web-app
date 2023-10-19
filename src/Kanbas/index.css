@@ -1,0 +1,63 @@
+* {
+  border-radius: 0;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+#nav-1 {
+  width: 85px !important;
+}
+
+#nav-1 > ul {
+  width: 85px;
+}
+
+#nav-1 > ul > li > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  margin: 5px;
+  color: white;
+}
+
+.active-1 {
+  background-color: white !important;
+  color: red !important;
+}
+
+#nav-2 {
+  margin: 20px;
+}
+
+.active-2 {
+  color: black !important;
+  border: 1px solid black;
+}
+
+.card {
+  width: 260px;
+}
+
+.breadcrumb-item {
+  color: red;
+}
+
+.breadcrumb > .active {
+  color: black;
+}
+
+.module {
+  font-weight: 500;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.nav-link {
+  color: red;
+}
