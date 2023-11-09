@@ -52,7 +52,7 @@ function Dashboard({
             </button>
             <button
               className="btn btn-primary float-end"
-              onClick={() => updateCourse()}
+              onClick={() => updateCourse(course)}
             >
               Update
             </button>
@@ -97,7 +97,7 @@ function Dashboard({
                     className="btn btn-danger"
                     onClick={(e) => {
                       e.preventDefault();
-                      deleteCourse(course._id);
+                      deleteCourse(course);
                     }}
                   >
                     Delete
