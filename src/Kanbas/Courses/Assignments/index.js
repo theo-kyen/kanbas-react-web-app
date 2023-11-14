@@ -14,7 +14,7 @@ function Assignments() {
   );
   return (
     <div>
-        <h2>Assignments</h2>
+      <h2>Assignments</h2>
       <div className="list-group me-5">
         <div className="d-flex justify-content-between align-items-center bg-body-secondary border-2">
           <div className="d-flex align-items-center">

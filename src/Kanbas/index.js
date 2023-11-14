@@ -17,9 +17,11 @@ function Kanbas() {
     endDate: "2023-12-15",
   });
 
-  const URL = "http://localhost:4000/api/courses";
+  const API_BASE = process.env.REACT_APP_API_BASE;
+  const COURSES_URL = `${API_BASE}/courses`;
+
   const findAllCourses = async () => {
-    const response = await axios.get(URL);
+    const response = await axios.get(COURSES_URL);
     setCourses(response.data);
   };
 
@@ -28,15 +30,15 @@ function Kanbas() {
   }, []);
 
   const addCourse = async () => {
-    const response = await axios.post(URL, course);
+    const response = await axios.post(COURSES_URL, course);
     setCourses([response.data, ...courses]);
   };
   const deleteCourse = async (course) => {
-    const response = await axios.delete(`${URL}/${course._id}`);
+    const response = await axios.delete(`${COURSES_URL}/${course._id}`);
     setCourses(courses.filter((c) => c._id !== course._id));
   };
   const updateCourse = async (course) => {
-    const response = await axios.put(`${URL}/${course._id}`, course);
+    const response = await axios.put(`${COURSES_URL}/${course._id}`, course);
     setCourses(
       courses.map((c) => {
         if (c._id === course._id) {
