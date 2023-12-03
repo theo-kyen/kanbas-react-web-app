@@ -15,7 +15,6 @@ import {
 
 function KanbasNavigation() {
   const links = [
-    "Account",
     "Dashboard",
     "Courses",
     "Calendar",
@@ -27,7 +26,6 @@ function KanbasNavigation() {
   ];
 
   const icons = [
-    <FaCircleUser />,
     <TfiDashboard style={{ color: "red" }} />,
     <FaBook style={{ color: "red" }} />,
     <FaInbox style={{ color: "red" }} />,
@@ -44,8 +42,33 @@ function KanbasNavigation() {
       <Link to={"/Kanbas/"}>
         <img style={{ width: 125 }} src="../images/logo.png" />
       </Link>
+      <Link
+        to={"/Kanbas/signin"}
+        className={`list-group-item border-0 bg-black text-white text-center rounded-0 fs-5  ${
+          pathname.includes("signin") && "active-1"
+        }`}
+      >
+        Sign In
+      </Link>
+      <Link
+        to={"/Kanbas/signup"}
+        className={`list-group-item border-0 bg-black text-white text-center rounded-0 fs-5  ${
+          pathname.includes("signup") && "active-1"
+        }`}
+      >
+        Sign Up
+      </Link>
+      <Link
+        to={"/Kanbas/account"}
+        className={`list-group-item border-0 bg-black text-white text-center rounded-0 fs-5  ${
+          pathname.includes("account") && "active-1"
+        }`}
+      >
+        <FaCircleUser />
+        <br />
+        Account
+      </Link>
       {links.map((link, index) => {
-        const Icon = icons[index];
         return (
           <Link
             key={index}
